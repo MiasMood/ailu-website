@@ -1,0 +1,838 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #f7da2f;
+  --light-blue-gray: #a6a6ad;
+  --dark-gray: #4d4d51;
+  --white: #ffffff;
+  --navy: #060628;
+  --warm-white: #f7f7f5;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--navy);
+  color: var(--white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site {
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("./assets/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 6, 40, 0.84) 0%,
+    rgba(6, 6, 40, 0.58) 38%,
+    rgba(6, 6, 40, 0.18) 100%
+  );
+}
+
+.heroHeader {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 56px;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  padding: 150px 80px 90px;
+}
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(52px, 6vw, 92px);
+  line-height: 0.95;
+  color: var(--white);
+}
+
+h2 {
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 1;
+}
+
+.lead {
+  max-width: 560px;
+  margin: 32px 0 40px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 28px;
+  border: 1px solid var(--gold);
+  color: var(--white);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: rgba(247, 218, 47, 0.15);
+}
+
+.darkButton {
+  color: var(--navy);
+}
+
+.introSection {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 72px;
+  align-items: center;
+  padding: 120px 80px;
+  background: var(--white);
+  color: var(--navy);
+}
+
+.introText {
+  max-width: 560px;
+}
+
+.introText h2 {
+  margin-bottom: 28px;
+}
+
+.introText p:last-child {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.8;
+  color: var(--dark-gray);
+}
+
+.introImageWrap {
+  overflow: hidden;
+}
+
+.introImage {
+  display: block;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding: 7rem 8%;
+  background: var(--navy);
+}
+
+.pillar h3 {
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.pillar p {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.8;
+}
+
+.villasSection,
+.hawoSection,
+.locationSection,
+.availableSection,
+.investmentSection,
+.contactSection {
+  padding: 110px 80px;
+}
+
+.villasSection,
+.availableSection {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.hawoSection {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.locationSection,
+.investmentSection {
+  background: var(--warm-white);
+  color: var(--navy);
+}
+
+.contactSection {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+}
+
+.sectionInner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.sectionInner.wide {
+  max-width: 1080px;
+}
+
+.sectionInner h2 {
+  margin-bottom: 28px;
+}
+
+.sectionInner p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.villaHighlights {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.highlightCard {
+  padding: 40px;
+  border: 1px solid rgba(77, 77, 81, 0.15);
+  background: var(--white);
+}
+
+.highlightNumber {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.highlightCard h3,
+.villaCard h3,
+.contactCard h3,
+.locationGrid h3 {
+  margin: 0 0 16px;
+  color: var(--navy);
+}
+
+.highlightCard p,
+.villaCard p {
+  margin: 0;
+  color: var(--dark-gray);
+}
+
+.imageGallery {
+  width: 100%;
+  max-width: 1080px;
+  margin: 4rem auto 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 260px 260px;
+  gap: 24px;
+}
+
+.imageGallery .galleryItem:first-child {
+  grid-row: 1 / 3;
+}
+
+.galleryItem {
+  overflow: hidden;
+  border-radius: 18px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.galleryItem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.04);
+}
+
+.interiorGallery {
+  max-width: 1080px;
+  margin: 6rem auto 0;
+  padding: 4rem;
+  background: var(--warm-white);
+  color: var(--navy);
+  border-radius: 28px;
+  border: 1px solid rgba(6, 6, 40, 0.08);
+}
+
+.interiorGalleryText {
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+
+.interiorGalleryText h2 {
+  max-width: 700px;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.05;
+}
+
+.interiorImages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.interiorImages img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(247, 218, 47, 0.15);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.interiorImages img:hover {
+  transform: translateY(-4px);
+}
+
+.locationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  margin-top: 48px;
+  text-align: left;
+}
+
+.locationGrid ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+.mapPlaceholder {
+  margin-top: 48px;
+  min-height: 320px;
+  border-radius: 24px;
+  background:
+    linear-gradient(rgba(6, 6, 40, 0.35), rgba(6, 6, 40, 0.35)),
+    var(--light-blue-gray);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.villaList {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.villaCard,
+.contactCard {
+  padding: 32px;
+  border: 1px solid rgba(77, 77, 81, 0.15);
+  background: var(--white);
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.villaCard span {
+  color: var(--gold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.villaCard button {
+  margin-top: auto;
+  padding: 12px 16px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--navy);
+  color: var(--navy);
+  cursor: pointer;
+}
+
+.contactGrid {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.contactCard a {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.footer {
+  padding: 32px 80px;
+  background: var(--navy);
+  color: var(--light-blue-gray);
+  font-size: 13px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.shareButtons {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.shareButtons button {
+  padding: 10px 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--light-blue-gray);
+  cursor: pointer;
+}
+
+.shareButtons button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .introSection,
+  .twoColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .villaList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .interiorImages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageGallery {
+    grid-template-rows: 220px 220px;
+  }
+}
+
+@media (max-width: 760px) {
+  .heroHeader {
+    padding: 24px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .heroContent {
+    padding: 120px 24px 64px;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  .introSection,
+  .villasSection,
+  .hawoSection,
+  .locationSection,
+  .availableSection,
+  .investmentSection,
+  .contactSection {
+    padding: 80px 24px;
+  }
+
+  .introImage {
+    height: 420px;
+  }
+
+  .pillars,
+  .villaHighlights,
+  .locationGrid,
+  .villaList,
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageGallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .imageGallery .galleryItem:first-child {
+    grid-row: auto;
+  }
+
+  .galleryItem {
+    aspect-ratio: 4 / 3;
+  }
+
+  .interiorGallery {
+    padding: 2rem;
+  }
+
+  .interiorImages {
+    grid-template-columns: 1fr;
+  }
+
+  .interiorImages img {
+    height: 300px;
+  }
+
+  .footer {
+    padding: 32px 24px;
+  }
+}
+
+.plotMapPlaceholder {
+  width: 100%;
+  margin: 56px 0 32px;
+
+  min-height: 420px;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      rgba(6, 6, 40, 0.28),
+      rgba(6, 6, 40, 0.28)
+    ),
+    var(--light-blue-gray);
+
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.villaList {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.villaCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.villaStatus {
+  padding: 7px 12px;
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--navy) !important;
+
+  background: linear-gradient(
+    135deg,
+    rgba(104, 255, 194, 0.18),
+    rgba(0, 240, 180, 0.08)
+  );
+
+  border: 1px solid rgba(0, 180, 120, 0.22);
+
+  box-shadow:
+    0 0 18px rgba(64, 255, 170, 0.15),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+@media (max-width: 1100px) {
+  .villaList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .villaList {
+    grid-template-columns: 1fr;
+  }
+
+  .plotMapPlaceholder {
+    min-height: 280px;
+  }
+}
+
+.villaStatus::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #31d08c;
+  display: inline-block;
+  margin-right: 8px;
+  box-shadow: 0 0 8px rgba(49,208,140,0.6);
+}
+
+.villaList {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.villaCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+}
+
+.villaCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.villaStatus {
+  flex-shrink: 0;
+}
+
+.villaCard button {
+  margin-top: auto;
+}
+
+@media (max-width: 760px) {
+  .villaList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mapLink {
+  display: inline-block;
+  margin: 24px 0 48px;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.mapLink:hover {
+  color: var(--gold);
+}
+
+.mapImageLink {
+  display: block;
+  margin-top: 48px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.mapImageLink img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.mapImageLink:hover img {
+  transform: scale(1.03);
+}
+
+.villaMeta {
+  margin-top: 12px;
+}
+
+.plotSize {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.plotSize::before {
+  content: "▣ ";
+  color: var(--gold);
+}
+
+.plotMap {
+  margin-top: 56px;
+  background: var(--white);
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(77, 77, 81, 0.15);
+}
+
+.plotMap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.plotLegend {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 20px 24px;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.plotLegend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plotLegend i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.availableDot {
+  background: #31d08c;
+}
+
+.reservedDot {
+  background: var(--gold);
+}
+
+.soldDot {
+  background: #9a9aa3;
+}
+
+.demoDot {
+  background: var(--navy);
+  border-radius: 3px;
+}
+
+.locationCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin: 48px 0;
+}
+
+.locationCard:last-child {
+  grid-column: 1 / -1;
+}
+
+.locationCard {
+  background: var(--white);
+  border: 1px solid rgba(77, 77, 81, 0.12);
+  padding: 36px;
+  border-radius: 20px;
+}
+
+.locationCard h3 {
+  margin-bottom: 18px;
+  color: var(--navy);
+  font-size: 24px;
+}
+
+.locationCard ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.locationCard li {
+  margin-bottom: 10px;
+}
+
+.locationCard li {
+  line-height: 1.5;
+}
+
+.locationCard h3 {
+  min-height: 72px;
+}
+
+@media (max-width: 900px) {
+  .locationCards {
+    grid-template-columns: 1fr;
+  }
+
+  .locationCard {
+    width: 100%;
+  }
+}
