@@ -120,13 +120,13 @@ export default function App() {
             </div>
 
             <div className="highlightCard">
-              <span className="highlightNumber">03</span>
-              <h3>Personal terrace options</h3>
-              <p>
-                Owners can influence the terrace and outdoor spaces to suit
-                their way of enjoying Lapland.
-              </p>
-            </div>
+  <span className="highlightNumber">03</span>
+  <h3>Personalized finishes</h3>
+  <p>
+    Owners can influence selected interior finishes and details while the overall
+    villa concept remains carefully designed and cohesive.
+  </p>
+</div>
 
             <div className="highlightCard">
               <span className="highlightNumber">04</span>
