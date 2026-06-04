@@ -97,7 +97,7 @@ export default function App() {
           <p>
             The villas share a refined architectural identity with a fixed
             exterior form, window placement, doors and colour palette. Owners
-            can influence the terrace and selected outdoor living details.
+            can influence the terrace and selected indoor living details.
           </p>
 
           <div className="villaHighlights">
