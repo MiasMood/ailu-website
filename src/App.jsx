@@ -14,7 +14,20 @@ import bathroomImage from "./assets/images/Sisäkuva_WC.jpg";
 import plotMapImage from "./assets/images/plot-map.png";
 
 export default function App() {
-  return (
+const villas = [
+  { number: 1, name: "Villa Vuosttaš" },
+  { number: 2, name: "Villa Davás" },
+  { number: 3, name: "Villa Eana" },
+  { number: 4, name: "Villa Várri" },
+  { number: 5, name: "Villa Jiekŋa" },
+  { number: 6, name: "Villa Čuovga" },
+  { number: 7, name: "Villa Guovssahas" },
+  { number: 8, name: "Villa Násti" },
+  { number: 9, name: "Villa Áigi" },
+  { number: 10, name: "Villa Ráfi" },
+];
+
+return (
     <main className="site">
       <section className="hero">
         <div className="heroOverlay" />
@@ -32,11 +45,9 @@ export default function App() {
 
         <div className="heroContent">
           <p className="eyebrow">Suomutunturi, Finnish Lapland</p>
-          <h1>Own a private retreat in Finnish Lapland</h1>
+          <h1>Own a private retreat in Lapland</h1>
           <p className="lead">
-            Àilu is a collection of private Arctic villas in Finnish Lapland,
-            created for those seeking space, stillness and long-term value in
-            the North.
+            Àilu offers private Arctic villas in Suomutunturi - a place for those who value space, silence, and lasting value in the heart of Lapland's unique wilderness.
           </p>
           <a href="#contact" className="button">
             Request information
@@ -132,8 +143,7 @@ export default function App() {
               <span className="highlightNumber">04</span>
               <h3>Year-round use</h3>
               <p>
-                Designed for every season, from winter nights under the northern
-                lights to quiet summer days in nature.
+                Designed for every season, from winter nights under the Northern Lights to summer days beneath the Midnight Sun.
               </p>
             </div>
           </div>
@@ -219,6 +229,7 @@ export default function App() {
       <li>Cross-country ski tracks – direct access</li>
       <li>Snowmobile routes – direct access</li>
       <li>Hiking trails – direct access</li>
+      <li>East slope Ski Lift – approx. 400 m</li>
     </ul>
   </div>
 
@@ -230,6 +241,7 @@ export default function App() {
       <li>Local services – approx. 12 km</li>
       <li>Kemijärvi town centre – approx. 42 km</li>
       <li>Kemijärvi railway station – approx. 42 km</li>
+      <li>Hotel Suomutunturi – approx. 1 km</li>
     </ul>
   </div>
 
@@ -237,9 +249,10 @@ export default function App() {
     <h3>National parks & attractions</h3>
 
     <ul>
+      <li>Riisitunturi National Park – approx. 78 km</li>
+      <li>Pieni Karhunkierros Trail – approx. 86 km</li>
       <li>Pyhä-Luosto National Park – approx. 95 km</li>
       <li>Salla Ski Resort – approx. 95 km</li>
-      <li>Riisitunturi National Park – approx. 105 km</li>
       <li>Ranua Wildlife Park – approx. 145 km</li>
       <li>Ruka Ski Resort – approx. 145 km</li>
     </ul>
@@ -291,27 +304,28 @@ export default function App() {
   </div>
 </div>
 
-    <div className="villaList">
-      {Array.from({ length: 10 }, (_, i) => i + 1).map((villa) => (
-        <div className="villaCard" key={villa}>
-          <div className="villaCardTop">
-            <span>Villa {String(villa).padStart(2, "0")}</span>
-            <span className="villaStatus">Available</span>
-          </div>
+<div className="villaList">
+  {villas.map((villa) => (
+    <div className="villaCard" key={villa.number}>
+      <div className="villaCardTop">
+        <span>Villa {String(villa.number).padStart(2, "0")}</span>
+        <span className="villaStatus">Available</span>
+      </div>
 
-          <h3>Àilu Villa {String(villa).padStart(2, "0")}</h3>
+      <h3>{villa.name}</h3>
 
-          <div className="villaMeta">
-  <p className="plotSize">Plot size: TBD</p>
+      <div className="villaMeta">
+        <p className="plotSize">Plot size: TBD</p>
 
-  <p>
-    Private plot · Own connections · Finnish Lapland
-  </p>
-</div>
-          <button>Download brochure</button>
-        </div>
-      ))}
+        <p>
+          Private plot · Own connections · Finnish Lapland
+        </p>
+      </div>
+
+      <button>Download brochure</button>
     </div>
+  ))}
+</div>
   </div>
 </section>
 
@@ -335,22 +349,59 @@ export default function App() {
 
           <div className="contactGrid">
             <div className="contactCard">
-              <h3>Developer</h3>
-              <p>
-                For questions about the project, development and villa concept.
-              </p>
-              <a href="mailto:sanna.ronnkvist@picante.fi">
-                sanna.ronnkvist@picante.fi
-              </a>
-            </div>
+  <h3>Founders & Developers</h3>
 
-            <div className="contactCard">
-              <h3>Sales by Habita</h3>
-              <p>
-                For pricing, availability, reservations and property sales.
-              </p>
-              <a href="#">Habita contact details coming soon</a>
-            </div>
+  <p>
+    In the Silence of the North Oy<br />
+    Business ID: 3609849-2
+  </p>
+
+  <p>
+    Sanna and Mikael Rönnkvist combine over 35 years of
+    experience in hospitality, tourism, construction and
+    property development. Their vision for ÁILU is to create
+    high-quality Arctic holiday homes inspired by the unique
+    nature of Finnish Lapland.
+  </p>
+
+  <a href="mailto:sanna.ronnkvist@picante.fi">
+    sanna.ronnkvist@picante.fi
+  </a>
+
+  <a href="mailto:mikael@ronnkvist.fi">
+    mikael@ronnkvist.fi
+  </a>
+
+  <p>
+    +358 40 745 8784
+  </p>
+</div>
+
+           <div className="contactCard">
+  <h3>Sales by Habita</h3>
+
+  <p>
+    Contact our sales representative for pricing, availability
+    and villa reservations.
+  </p>
+
+  <p>
+    <strong>Henri Tuomi</strong><br />
+    Sales Manager
+  </p>
+
+  <a href="tel:+358504200787">
+    +358 50 420 0787
+  </a>
+
+  <a href="mailto:henri.tuomi@habita.com">
+    henri.tuomi@habita.com
+  </a>
+
+  <p>
+    Habita Rovaniemi
+  </p>
+</div>
           </div>
         </div>
       </section>
