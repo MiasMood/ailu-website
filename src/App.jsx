@@ -317,13 +317,14 @@ return (
   {villas.map((villa) => (
     <div className="villaCard" key={villa.number}>
       <div className="villaCardTop">
-        <span>Villa {String(villa.number).padStart(2, "0")}</span>
-       <span className={villa.status === "Demo Villa" ? "villaStatus demoStatus" : "villaStatus"}>
-  {villa.status || "Available"}
-</span>
-      </div>
+  <span className={villa.status === "Demo Villa" ? "villaStatus demoStatus" : "villaStatus"}>
+    {villa.status || "Available"}
+  </span>
+</div>
 
-      <h3>{villa.name}</h3>
+<h3>
+  {villa.number}. {villa.name}
+</h3>
 
      <div className="villaMeta">
   <p className="plotSize">Plot size: {villa.plotSize || "TBD"}</p>
