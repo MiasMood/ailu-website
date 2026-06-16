@@ -11,20 +11,20 @@ import kitchenImage from "./assets/images/Sisäkuva_Kylpyhuone.jpg";
 import loftImage from "./assets/images/Sisäkuva_Parvi.jpg";
 import livingRoomOneImage from "./assets/images/Sisäkuva_Tupa1.jpg";
 import bathroomImage from "./assets/images/Sisäkuva_WC.jpg";
-import plotMapImage from "./assets/images/plot-map.png";
+import plotMapImage from "./assets/images/plot-map.jpg";
 
 export default function App() {
 const villas = [
-  { number: 1, name: "Villa Vuosttaš" },
-  { number: 2, name: "Villa Davás" },
-  { number: 3, name: "Villa Eana" },
-  { number: 4, name: "Villa Várri" },
-  { number: 5, name: "Villa Jiekŋa" },
-  { number: 6, name: "Villa Čuovga" },
-  { number: 7, name: "Villa Guovssahas" },
-  { number: 8, name: "Villa Násti" },
-  { number: 9, name: "Villa Áigi" },
-  { number: 10, name: "Villa Ráfi" },
+  { number: 1, name: "Villa Vuosttaš", status: "Demo Villa" },
+  { number: 2, name: "Villa Davás", status: "Available" },
+  { number: 3, name: "Villa Eana", status: "Available" },
+  { number: 4, name: "Villa Várri", status: "Available" },
+  { number: 5, name: "Villa Jiekŋa", status: "Available" },
+  { number: 6, name: "Villa Čuovga", status: "Available" },
+  { number: 7, name: "Villa Guovssahas", status: "Available" },
+  { number: 8, name: "Villa Násti", status: "Available" },
+  { number: 9, name: "Villa Áigi", status: "Available" },
+  { number: 10, name: "Villa Ráfi", status: "Available" },
 ];
 
 return (
@@ -233,17 +233,19 @@ return (
     </ul>
   </div>
 
-  <div className="locationCard">
-    <h3>Services & travel</h3>
+<div className="locationCard">
+  <h3>Services & travel</h3>
 
-    <ul>
-      <li>Restaurant Takka – approx. 1 km</li>
-      <li>Local services – approx. 12 km</li>
-      <li>Kemijärvi town centre – approx. 42 km</li>
-      <li>Kemijärvi railway station – approx. 42 km</li>
-      <li>Hotel Suomutunturi – approx. 1 km</li>
-    </ul>
-  </div>
+  <ul>
+    <li>Kuusamo Airport – approx. 108 km</li>
+    <li>Rovaniemi Airport – approx. 125 km</li>
+    <li>Restaurant Takka – approx. 1 km</li>
+    <li>Hotel Suomutunturi – approx. 1 km</li>
+    <li>Local services – approx. 12 km</li>
+    <li>Kemijärvi town centre – approx. 42 km</li>
+    <li>Kemijärvi railway station – approx. 42 km</li>
+  </ul>
+</div>
 
   <div className="locationCard">
     <h3>National parks & attractions</h3>
@@ -304,23 +306,34 @@ return (
   </div>
 </div>
 
+<div className="floorPlanPreview">
+  <h3>Villa floor plan</h3>
+  <div className="floorPlanPlaceholder">
+    Floor plan coming soon
+  </div>
+</div>
+
 <div className="villaList">
   {villas.map((villa) => (
     <div className="villaCard" key={villa.number}>
       <div className="villaCardTop">
         <span>Villa {String(villa.number).padStart(2, "0")}</span>
-        <span className="villaStatus">Available</span>
+       <span className={villa.status === "Demo Villa" ? "villaStatus demoStatus" : "villaStatus"}>
+  {villa.status || "Available"}
+</span>
       </div>
 
       <h3>{villa.name}</h3>
 
-      <div className="villaMeta">
-        <p className="plotSize">Plot size: TBD</p>
+     <div className="villaMeta">
+  <p className="plotSize">Plot size: {villa.plotSize || "TBD"}</p>
+  <p className="villaSize">Villa size: {villa.villaSize || "TBD"}</p>
+  <p className="villaPrice">Price: {villa.price || "TBD"}</p>
 
-        <p>
-          Private plot · Own connections · Finnish Lapland
-        </p>
-      </div>
+  <p>
+    Private plot · Own connections · Finnish Lapland
+  </p>
+</div>
 
       <button>Download brochure</button>
     </div>

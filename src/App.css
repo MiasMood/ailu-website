@@ -744,15 +744,10 @@ h2 {
 }
 
 .plotSize {
-  margin: 0 0 12px;
-  color: var(--navy);
-  font-weight: 600;
+  margin: 0;
+  color: var(--text);
+  font-weight: 400;
   font-size: 15px;
-}
-
-.plotSize::before {
-  content: "▣ ";
-  color: var(--gold);
 }
 
 .plotMap {
@@ -859,4 +854,24 @@ h2 {
   .locationCard {
     width: 100%;
   }
+}
+
+.villaStatus.demo-villa {
+  background: rgba(6, 6, 40, 0.08);
+  border-color: rgba(6, 6, 40, 0.35);
+  color: var(--navy);
+}
+
+.villaStatus.demo-villa::before {
+  background: var(--navy);
+}
+
+.demoStatus {
+  background: rgba(6, 6, 40, 0.08) !important;
+  border-color: rgba(6, 6, 40, 0.35) !important;
+  color: var(--navy) !important;
+}
+
+.demoStatus::before {
+  background: var(--navy) !important;
 }
