@@ -13,6 +13,9 @@ import livingRoomOneImage from "./assets/images/Sisäkuva_Tupa1.jpg";
 import bathroomImage from "./assets/images/Sisäkuva_WC.jpg";
 import plotMapImage from "./assets/images/plot-map.jpg";
 
+import floorPlanGroundImage from "./assets/images/ailu-floor-plan-ground.jpg";
+import floorPlanLoftImage from "./assets/images/ailu-floor-plan-loft.jpg";
+
 export default function App() {
 const villas = [
   { number: 1, name: "Villa Vuosttaš", status: "Demo Villa" },
@@ -308,8 +311,25 @@ return (
 
 <div className="floorPlanPreview">
   <h3>Villa floor plan</h3>
-  <div className="floorPlanPlaceholder">
-    Floor plan coming soon
+
+  <div className="floorPlanGrid">
+    <div className="floorPlanImageCard">
+  <p className="floorPlanLabel">Ground floor</p>
+<img
+  className="floorPlanImage"
+  src={floorPlanGroundImage}
+  alt="Ground floor plan of the Àilu villa"
+/>
+</div>
+
+<div className="floorPlanImageCard">
+  <p className="floorPlanLabel">Loft floor</p>
+<img
+  className="floorPlanImage"
+  src={floorPlanLoftImage}
+  alt="Loft floor plan of the Àilu villa"
+/>
+</div>
   </div>
 </div>
 

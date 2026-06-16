@@ -875,3 +875,18 @@ h2 {
 .demoStatus::before {
   background: var(--navy) !important;
 }
+
+.floorPlanImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.floorPlanLabel {
+  margin: 32px 0 12px;
+  color: #4d4d51;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
