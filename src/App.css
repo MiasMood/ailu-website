@@ -890,3 +890,12 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+
+.floorPlanImageCard .floorPlanLabel {
+  margin: 32px 0 12px;
+  color: #4d4d51;
+  font-weight: 500;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
