@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 
 import logo from "./assets/logo/ailu-logo-light.png";
@@ -17,6 +18,7 @@ import floorPlanGroundImage from "./assets/images/ailu-floor-plan-ground.jpg";
 import floorPlanLoftImage from "./assets/images/ailu-floor-plan-loft.jpg";
 
 export default function App() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 const villas = [
   { number: 1, name: "Villa Vuosttaš", status: "Demo Villa" },
   { number: 2, name: "Villa Davás", status: "Reserved" },
@@ -44,6 +46,18 @@ return (
             <a href="#available">Available Villas</a>
             <a href="#contact">Contact</a>
           </nav>
+<button
+  className="mobileMenuButton"
+  type="button"
+  onClick={() => setMobileMenuOpen((open) => !open)}
+  aria-label="Open navigation menu"
+  aria-expanded={mobileMenuOpen}
+>
+  <span className="hamburgerIcon">
+  {mobileMenuOpen ? "×" : "☰"}
+</span>
+</button>
+
         </header>
 
         <div className="heroContent">
@@ -56,6 +70,25 @@ return (
             Request information
           </a>
         </div>
+
+{mobileMenuOpen && (
+  <nav className="mobileNav">
+    <button
+      className="mobileMenuClose"
+      onClick={() => setMobileMenuOpen(false)}
+      aria-label="Close menu"
+    >
+      ×
+    </button>
+
+    <a href="#why" onClick={() => setMobileMenuOpen(false)}>Why Àilu</a>
+    <a href="#villas" onClick={() => setMobileMenuOpen(false)}>Villas</a>
+    <a href="#location" onClick={() => setMobileMenuOpen(false)}>Location</a>
+    <a href="#available" onClick={() => setMobileMenuOpen(false)}>Available Villas</a>
+    <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+  </nav>
+)}
+
       </section>
 
       <section className="introSection" id="why">
