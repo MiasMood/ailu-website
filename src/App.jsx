@@ -497,7 +497,7 @@ return (
   </div>
 
   <p className="footerCredit">
-    Designed & developed by <strong>Studio Sumell</strong>
+    Website designed & developed by <strong>Studio Sumell</strong>
   </p>
 </footer>
     </main>
