@@ -3,7 +3,11 @@
 }
 
 :root {
-  --gold: #b8921f;
+  --gold-bright: #f7da2f;
+  --gold-soft: #b8921f;
+
+  --gold: var(--gold-soft);
+
   --light-blue-gray: #a6a6ad;
   --dark-gray: #4d4d51;
   --white: #ffffff;
@@ -79,7 +83,7 @@ a {
 
 .eyebrow {
   margin: 0 0 24px;
-  color: var(--gold);
+  color: var(--gold-bright);
   font-size: 13px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -177,7 +181,7 @@ h2 {
 }
 
 .pillar h3 {
-  color: var(--gold);
+  color: var(--gold-bright);
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
@@ -260,7 +264,7 @@ h2 {
 .highlightNumber {
   display: block;
   margin-bottom: 20px;
-  color: var(--gold);
+  color: var(--gold-bright);
   font-size: 14px;
   letter-spacing: 0.2em;
   font-weight: 600;
@@ -405,7 +409,7 @@ h2 {
 }
 
 .villaCard span {
-  color: var(--gold);
+  color: var(--gold-bright);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 12px;
@@ -484,8 +488,8 @@ h2 {
 }
 
 .shareButtons button:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--gold-bright);
+  color: var(--gold-bright);
 }
 
 @media (max-width: 1000px) {
@@ -717,7 +721,7 @@ h2 {
 }
 
 .mapLink:hover {
-  color: var(--gold);
+  color: var(--gold-bright);
 }
 
 .mapImageLink {
@@ -793,7 +797,7 @@ h2 {
 }
 
 .reservedDot {
-  background: f7da2f
+  background: var(--gold-bright);
 }
 
 .soldDot {
@@ -883,10 +887,6 @@ h2 {
   border: 1px solid #f7da2f;
 }
 
-.reservedStatus::before {
-  background: #c8a116;
-}
-
 .soldStatus {
   background: rgba(160, 160, 170, 0.18);
   border-color: rgba(160, 160, 170, 0.5);
@@ -902,7 +902,7 @@ h2 {
 }
 
 .reservedStatus::before {
-  background: #b8921f;
+  background: #e8c62a;
 }
 
 .soldStatus::before {
@@ -938,19 +938,19 @@ h2 {
 }
 
 .eyebrow {
-    color: #f7da2f;
+    color: var(--gold-bright);
     font-weight: 600;
     letter-spacing: 0.14em;
 }
 
 .eyebrow {
-  color: #f7da2f;
+  color: var(--gold-bright);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }.eyebrow {
-  color: #f7da2f;
+  color: var(--gold-bright);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -981,16 +981,16 @@ p.eyebrow {
 
 .pillars .eyebrow,
 .contactSection .eyebrow {
-  color: #f7da2f;
+  color: var(--gold-bright);
 }
 
 .pillars .pillar h3 {
-  color: #f7da2f;
+  color: var(--gold-bright);
 }
 
 .statusBadge.reserved {
   background: rgba(247, 218, 47, 0.22);
-  border-color: #fcd913;
+  border-color: #b8921f;
   color: #060628;
 }
 
@@ -1107,4 +1107,32 @@ p.eyebrow {
   .hero {
     padding-top: 120px;
   }
+}
+
+.footerSocial {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footerSocialTitle {
+  margin: 0;
+  color: var(--gold-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.footerSocial a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footerSocial a:hover {
+  color: var(--gold-bright);
 }

@@ -483,16 +483,21 @@ return (
         </div>
       </section>
 
-      <footer className="footer">
-        <p>© Àilu Arctic Circle Suomutunturi</p>
+     <footer className="footer">
+  <p>© Àilu Arctic Circle Suomutunturi</p>
 
-        <div className="shareButtons">
-          <button>Share</button>
-          <button>Facebook</button>
-          <button>LinkedIn</button>
-          <button>Email</button>
-        </div>
-      </footer>
+  <div className="footerSocial">
+    <p className="footerSocialTitle">Follow Àilu</p>
+
+    <a
+      href="https://www.instagram.com/in_the_silence_of_the_north/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      @in_the_silence_of_the_north
+    </a>
+  </div>
+</footer>
     </main>
   );
 }
