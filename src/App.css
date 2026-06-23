@@ -116,7 +116,7 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 15px 28px;
-  border: 1px solid var(--gold);
+  border: 1px solid #ffe15a;
   color: var(--white);
   font-size: 13px;
   letter-spacing: 0.16em;
@@ -935,19 +935,19 @@ h2 {
 }
 
 .eyebrow {
-    color: #e3c21f;
+    color: #f7da2f;
     font-weight: 600;
     letter-spacing: 0.14em;
 }
 
 .eyebrow {
-  color: #edcf27;
+  color: #f7da2f;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }.eyebrow {
-  color: #edcf27;
+  color: #f7da2f;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -974,4 +974,13 @@ p.eyebrow {
     font-size: 15px !important;
     letter-spacing: 0.10em !important;
   }
+}
+
+.pillars .eyebrow,
+.contactSection .eyebrow {
+  color: #f7da2f;
+}
+
+.pillars .pillar h3 {
+  color: #f7da2f;
 }
