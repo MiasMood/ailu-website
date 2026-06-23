@@ -294,7 +294,7 @@ return (
     <p className="eyebrow">Available villas</p>
     <h2>Choose your place in Lapland</h2>
     <p>
-      The villas are listed individually. Names, details and downloadable
+      The villas are listed individually. Downloadable
       brochures can be updated as the sales material is finalized.
     </p>
 

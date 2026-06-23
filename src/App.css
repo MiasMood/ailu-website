@@ -939,3 +939,39 @@ h2 {
     font-weight: 600;
     letter-spacing: 0.14em;
 }
+
+.eyebrow {
+  color: #edcf27;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}.eyebrow {
+  color: #edcf27;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+}
+
+p.eyebrow {
+  color: #edcf27 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 768px) {
+  p.eyebrow {
+    font-size: 12px !important;
+    letter-spacing: 0.10em !important;
+  }
+}
