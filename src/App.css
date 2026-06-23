@@ -872,8 +872,42 @@ h2 {
   color: var(--navy) !important;
 }
 
+.availableStatus {
+  background: rgba(46, 204, 113, 0.12);
+  border-color: rgba(46, 204, 113, 0.35);
+  color: var(--navy);
+}
+
+.reservedStatus {
+  background: rgba(247, 218, 47, 0.15);
+  border-color: rgba(247, 218, 47, 0.5);
+  color: var(--navy);
+}
+
+.soldStatus {
+  background: rgba(160, 160, 170, 0.18);
+  border-color: rgba(160, 160, 170, 0.5);
+  color: var(--navy);
+}
+
 .demoStatus::before {
   background: var(--navy) !important;
+}
+
+.availableStatus::before {
+  background: #2ecc71;
+}
+
+.reservedStatus::before {
+  background: #f7da2f;
+}
+
+.soldStatus::before {
+  background: #a6a6ad;
+}
+
+.demoStatus::before {
+  background: var(--navy);
 }
 
 .floorPlanImage {

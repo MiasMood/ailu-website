@@ -19,7 +19,7 @@ import floorPlanLoftImage from "./assets/images/ailu-floor-plan-loft.jpg";
 export default function App() {
 const villas = [
   { number: 1, name: "Villa Vuosttaš", status: "Demo Villa" },
-  { number: 2, name: "Villa Davás", status: "Available" },
+  { number: 2, name: "Villa Davás", status: "Reserved" },
   { number: 3, name: "Villa Eana", status: "Available" },
   { number: 4, name: "Villa Várri", status: "Available" },
   { number: 5, name: "Villa Jiekŋa", status: "Available" },
@@ -48,7 +48,7 @@ return (
 
         <div className="heroContent">
           <p className="eyebrow">Suomutunturi, Finnish Lapland</p>
-          <h1>Own a private retreat in Lapland</h1>
+          <h1>Own a Arctic Villa in Lapland</h1>
           <p className="lead">
             Àilu offers private Arctic villas in Suomutunturi - a place for those who value space, silence, and lasting value in the heart of Lapland's unique wilderness.
           </p>
@@ -337,9 +337,19 @@ return (
   {villas.map((villa) => (
     <div className="villaCard" key={villa.number}>
       <div className="villaCardTop">
-  <span className={villa.status === "Demo Villa" ? "villaStatus demoStatus" : "villaStatus"}>
-    {villa.status || "Available"}
-  </span>
+ <span
+  className={`villaStatus ${
+    villa.status === "Demo Villa"
+      ? "demoStatus"
+      : villa.status === "Reserved"
+      ? "reservedStatus"
+      : villa.status === "Sold"
+      ? "soldStatus"
+      : "availableStatus"
+  }`}
+>
+  {villa.status || "Available"}
+</span>
 </div>
 
 <h3>
