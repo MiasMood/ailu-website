@@ -483,9 +483,7 @@ return (
         </div>
       </section>
 
-     <footer className="footer">
-  <p>© Àilu Arctic Circle Suomutunturi</p>
-
+    <footer className="footer">
   <div className="footerSocial">
     <p className="footerSocialTitle">Follow Àilu</p>
 
@@ -497,6 +495,10 @@ return (
       @in_the_silence_of_the_north
     </a>
   </div>
+
+  <p className="footerCredit">
+    Designed & developed by <strong>Studio Sumell</strong>
+  </p>
 </footer>
     </main>
   );

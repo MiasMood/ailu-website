@@ -12,7 +12,7 @@
   --dark-gray: #4d4d51;
   --white: #ffffff;
   --navy: #060628;
-  --warm-white: #f7f7f5;
+  --cotton: #f4f4f2;
 }
 
 body {
@@ -213,7 +213,7 @@ h2 {
 
 .locationSection,
 .investmentSection {
-  background: var(--warm-white);
+  background: var(--cotton);
   color: var(--navy);
 }
 
@@ -321,7 +321,7 @@ h2 {
   max-width: 1080px;
   margin: 6rem auto 0;
   padding: 4rem;
-  background: var(--warm-white);
+  background: var(--cotton);
   color: var(--navy);
   border-radius: 28px;
   border: 1px solid rgba(6, 6, 40, 0.08);
@@ -1135,4 +1135,17 @@ p.eyebrow {
 
 .footerSocial a:hover {
   color: var(--gold-bright);
+}
+
+.footerCredit {
+  margin-top: 42px;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.footerCredit strong {
+  color: rgba(255, 255, 255, 0.68);
+  font-weight: 600;
 }
