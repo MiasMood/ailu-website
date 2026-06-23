@@ -273,8 +273,8 @@ return (
   <h3>Services & travel</h3>
 
   <ul>
-    <li>Kuusamo Airport – approx. 108 km</li>
-    <li>Rovaniemi Airport – approx. 125 km</li>
+    <li>Kuusamo Airport – approx. 115 km</li>
+    <li>Rovaniemi Airport – approx. 140 km</li>
     <li>Restaurant Takka – approx. 1 km</li>
     <li>Hotel Suomutunturi – approx. 1 km</li>
     <li>Local services – approx. 12 km</li>
