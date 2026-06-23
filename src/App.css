@@ -971,7 +971,7 @@ p.eyebrow {
 
 @media (max-width: 768px) {
   p.eyebrow {
-    font-size: 12px !important;
+    font-size: 15px !important;
     letter-spacing: 0.10em !important;
   }
 }
