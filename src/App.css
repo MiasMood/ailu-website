@@ -3,7 +3,7 @@
 }
 
 :root {
-  --gold: #f7da2f;
+  --gold: #b8921f;
   --light-blue-gray: #a6a6ad;
   --dark-gray: #4d4d51;
   --white: #ffffff;
@@ -899,7 +899,7 @@ h2 {
 }
 
 .reservedStatus::before {
-  background: #f7da2f;
+  background: #b8921f;
 }
 
 .soldStatus::before {
@@ -932,4 +932,10 @@ h2 {
   font-size: 12px !important;
   text-transform: uppercase;
   letter-spacing: 0.12em;
+}
+
+.eyebrow {
+    color: #e3c21f;
+    font-weight: 600;
+    letter-spacing: 0.14em;
 }
