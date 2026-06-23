@@ -1107,6 +1107,18 @@ p.eyebrow {
   .hero {
     padding-top: 120px;
   }
+
+  .footer {
+  text-align: center;
+}
+
+.footerSocial {
+  align-items: center;
+}
+
+.footerCredit {
+  text-align: center;
+}
 }
 
 .footerSocial {
@@ -1115,6 +1127,10 @@ p.eyebrow {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+}
+
+.footerSocial {
+  margin-bottom: 60px;
 }
 
 .footerSocialTitle {
@@ -1138,7 +1154,7 @@ p.eyebrow {
 }
 
 .footerCredit {
-  margin-top: 42px;
+  margin-top: 60px;
   margin-bottom: 0;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
