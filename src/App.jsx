@@ -494,6 +494,14 @@ return (
     >
       @in_the_silence_of_the_north
     </a>
+
+    <nav className="footerNav">
+  <a href="#about">Why Àilu</a>
+  <a href="#villas">Villas</a>
+  <a href="#location">Location</a>
+  <a href="#available">Available Villas</a>
+  <a href="#contact">Contact</a>
+</nav>
   </div>
 
   <p className="footerCredit">
