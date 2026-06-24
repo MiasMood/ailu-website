@@ -100,7 +100,7 @@ const villas = [
     address: "Itärinteentie",
     plotSize: "1286 m²",
     villaSize: "58,5 m²",
-    price: "259000 #",
+    price: "259000 €",
   },
   {
     number: 10,
