@@ -46,7 +46,7 @@ const villas = [
     address: "Neulaskuja 1",
     plotSize: "1559 m²",
     villaSize: "58,5 m²",
-    price: "279000 €",
+    price: "279 000 €",
   },
   {
     number: 4,
@@ -55,7 +55,7 @@ const villas = [
     address: "Neulaskuja 6",
     plotSize: "1335 m²",
     villaSize: "58,5 m²",
-    price: "279000 €",
+    price: "279 000 €",
   },
   {
     number: 5,
@@ -64,7 +64,7 @@ const villas = [
     address: "Neulaskuja 4",
     plotSize: "1332 m²",
     villaSize: "58,5 m²",
-    price: "269000 €",
+    price: "269 000 €",
   },
   {
     number: 6,
@@ -73,7 +73,7 @@ const villas = [
     address: "Neulaskuja 2",
     plotSize: "1703 m²",
     villaSize: "58,5 m²",
-    price: "269000 €",
+    price: "269 000 €",
   },
   {
     number: 7,
@@ -82,7 +82,7 @@ const villas = [
     address: "Itärinteentie",
     plotSize: "1295 m²",
     villaSize: "58,5 m²",
-    price: "259000 €",
+    price: "259 000 €",
   },
   {
     number: 8,
@@ -91,7 +91,7 @@ const villas = [
     address: "Itärinteentie",
     plotSize: "1247 m²",
     villaSize: "58,5 m²",
-    price: "259000 €",
+    price: "259 000 €",
   },
   {
     number: 9,
@@ -100,7 +100,7 @@ const villas = [
     address: "Itärinteentie",
     plotSize: "1286 m²",
     villaSize: "58,5 m²",
-    price: "259000 €",
+    price: "259 000 €",
   },
   {
     number: 10,
@@ -109,7 +109,7 @@ const villas = [
     address: "Itärinteentie",
     plotSize: "1251 m²",
     villaSize: "58,5 m²",
-    price: "259000 €",
+    price: "259 000 €",
   },
 ];
 
