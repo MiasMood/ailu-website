@@ -2,7 +2,9 @@ import { useState } from "react";
 import "./App.css";
 
 import logo from "./assets/logo/ailu-logo-light.png";
+import logoDark from "./assets/logo/ailu_logo_dark.png";
 import hawoLogo from "./assets/images/hawo-logo.jpg";
+import habitaLogo from "./assets/images/habita_logo.jpg";
 import livingRoomImage from "./assets/images/Sisäkuva_Tupa2.jpg";
 import villaExteriorImage from "./assets/images/villa-exterior.jpg";
 import villaInteriorImage from "./assets/images/villa-interior.jpg";
@@ -525,62 +527,83 @@ return (
           <p className="eyebrow">Contact</p>
           <h2>Begin your Arctic villa journey</h2>
 
-          <div className="contactGrid">
-            <div className="contactCard">
-  <h3>Founders & Developers</h3>
+         <div className="contactGrid">
+  <div className="contactCard ailuContactCard">
+    <div>
+      <h3>Founders & Developers</h3>
 
-  <p>
-    In the Silence of the North Oy<br />
-    Business ID: 3609849-2
-  </p>
+      <p>
+        In the Silence of the North Oy<br />
+        Business ID: 3609849-2
+      </p>
 
-  <p>
-    Sanna and Mikael Rönnkvist combine over 35 years of
-    experience in hospitality, tourism, construction and
-    property development. Their vision for ÁILU is to create
-    high-quality Arctic holiday homes inspired by the unique
-    nature of Finnish Lapland.
-  </p>
+      <p>
+        With over 35 years of experience in hospitality, tourism, construction
+        and property development, they share a vision of creating high-quality
+        Arctic holiday homes inspired by the unique nature of Finnish Lapland.
+      </p>
+    </div>
 
-  <a href="mailto:sanna.ronnkvist@picante.fi">
-    sanna.ronnkvist@picante.fi
-  </a>
+<div className="contactCardBottom">
+  <div className="contactContent">
+    <p>
+      <strong>Sanna &amp; Mikael Rönnkvist</strong><br />
+      Founders & Developers<br />
+      +358 40 745 8784
+    </p>
 
-  <a href="mailto:mikael@ronnkvist.fi">
-    mikael@ronnkvist.fi
-  </a>
+    <a href="mailto:sanna.ronnkvist@picante.fi">
+      sanna.ronnkvist@picante.fi
+    </a>
 
-  <p>
-    +358 40 745 8784
-  </p>
+    <a href="mailto:mikael@ronnkvist.fi">
+      mikael@ronnkvist.fi
+    </a>
+
+    <p>In the Silence of the North Oy</p>
+  </div>
+
+ <img
+  src={logoDark}
+  alt="Àilu Arctic Circle Suomu"
+  className="contactLogo ailuLogo"
+/>
 </div>
+  </div>
 
-           <div className="contactCard">
-  <h3>Sales by Habita</h3>
+  <div className="contactCard habitaCard">
+  <div>
+    <h3>Sales by Habita</h3>
 
-  <p>
-    Contact our sales representative for pricing, availability
-    and villa reservations.
-  </p>
+    <p>
+      Contact our sales representative for pricing, availability and villa
+      reservations.
+    </p>
+  </div>
 
-  <p>
-    <strong>Henri Tuomi</strong><br />
-    Sales Manager
-  </p>
+  <div className="contactCardBottom">
+    <div className="contactContent">
+      <p>
+        <strong>Henri Tuomi</strong><br />
+        Sales Manager<br />
+        +358 50 420 0787
+      </p>
 
-  <a href="tel:+358504200787">
-    +358 50 420 0787
-  </a>
+      <a href="mailto:henri.tuomi@habita.com">
+        henri.tuomi@habita.com
+      </a>
 
-  <a href="mailto:henri.tuomi@habita.com">
-    henri.tuomi@habita.com
-  </a>
+      <p>Habita Rovaniemi</p>
+    </div>
 
-  <p>
-    Habita Rovaniemi
-  </p>
+   <img
+  src={habitaLogo}
+  alt="Habita"
+  className="contactLogo habitaLogo"
+/>
+  </div>
 </div>
-          </div>
+</div>
         </div>
       </section>
 

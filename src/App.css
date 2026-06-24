@@ -1236,3 +1236,106 @@ p.eyebrow {
 .demoVillaText {
   margin-top: 1.2rem;
 }
+
+.contactCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactCardBottom {
+  margin-top: auto;
+}
+
+.habitaLogo {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.contactCard a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.contactCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactCardBottom {
+  margin-top: auto;
+}
+
+.contactCard a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.contactCardBottom a {
+  display: block;
+  margin: 0.15rem 0;
+}
+
+.contactLogo {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.contactCardBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.contactLogo {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.ailuLogo {
+  width: 165px;
+  margin-right: -6px;
+}
+
+.habitaLogo {
+  width: 190px;
+  margin-right: -6px;
+}
+
+.habitaCard .contactContent {
+  margin-top: 2rem;
+}
+
+.contactLogo {
+  margin-right: 10px;
+}
+
+.contactContent a + a {
+  margin-top: -0.6rem;
+}
+
+.contactContent p:last-child {
+  margin-top: -0.5rem;
+}
