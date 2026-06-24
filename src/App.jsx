@@ -2,12 +2,12 @@ import { useState } from "react";
 import "./App.css";
 
 import logo from "./assets/logo/ailu-logo-light.png";
-
+import hawoLogo from "./assets/images/hawo-logo.jpg";
 import livingRoomImage from "./assets/images/Sisäkuva_Tupa2.jpg";
 import villaExteriorImage from "./assets/images/villa-exterior.jpg";
 import villaInteriorImage from "./assets/images/villa-interior.jpg";
 import arcticLandscapeImage from "./assets/images/arctic_landscape.png";
-
+import hawoAerialImage from "./assets/images/hawo-aerial.png";
 import kitchenImage from "./assets/images/Sisäkuva_Kylpyhuone.jpg";
 import loftImage from "./assets/images/Sisäkuva_Parvi.jpg";
 import livingRoomOneImage from "./assets/images/Sisäkuva_Tupa1.jpg";
@@ -20,16 +20,95 @@ import floorPlanLoftImage from "./assets/images/ailu-floor-plan-loft.jpg";
 export default function App() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 const villas = [
-  { number: 1, name: "Villa Vuosttaš", status: "Demo Villa" },
-  { number: 2, name: "Villa Davás", status: "Reserved" },
-  { number: 3, name: "Villa Eana", status: "Available" },
-  { number: 4, name: "Villa Várri", status: "Available" },
-  { number: 5, name: "Villa Jiekŋa", status: "Available" },
-  { number: 6, name: "Villa Čuovga", status: "Available" },
-  { number: 7, name: "Villa Guovssahas", status: "Available" },
-  { number: 8, name: "Villa Násti", status: "Available" },
-  { number: 9, name: "Villa Áigi", status: "Available" },
-  { number: 10, name: "Villa Ráfi", status: "Available" },
+  {
+    number: 1,
+    name: "Villa Vuosttaš",
+    status: "Demo Villa",
+    address: "Neulaskuja 5",
+    plotSize: "1783 m²",
+    villaSize: "58,5 m²",
+    demo: true,
+  },
+  {
+    number: 2,
+    name: "Villa Davás",
+    status: "Reserved",
+    address: "Neulaskuja 3",
+    plotSize: "1665 m²",
+    villaSize: "58,5 m²",
+  },
+  {
+    number: 3,
+    name: "Villa Eana",
+    status: "Available",
+    address: "Neulaskuja 1",
+    plotSize: "1559 m²",
+    villaSize: "58,5 m²",
+    price: "279000 €",
+  },
+  {
+    number: 4,
+    name: "Villa Várri",
+    status: "Available",
+    address: "Neulaskuja 6",
+    plotSize: "1335 m²",
+    villaSize: "58,5 m²",
+    price: "279000 €",
+  },
+  {
+    number: 5,
+    name: "Villa Jiekŋa",
+    status: "Available",
+    address: "Neulaskuja 4",
+    plotSize: "1332 m²",
+    villaSize: "58,5 m²",
+    price: "269000 €",
+  },
+  {
+    number: 6,
+    name: "Villa Čuovga",
+    status: "Available",
+    address: "Neulaskuja 2",
+    plotSize: "1703 m²",
+    villaSize: "58,5 m²",
+    price: "269000 €",
+  },
+  {
+    number: 7,
+    name: "Villa Guovssahas",
+    status: "Available",
+    address: "Itärinteentie",
+    plotSize: "1295 m²",
+    villaSize: "58,5 m²",
+    price: "259000 €",
+  },
+  {
+    number: 8,
+    name: "Villa Násti",
+    status: "Available",
+    address: "Itärinteentie",
+    plotSize: "1247 m²",
+    villaSize: "58,5 m²",
+    price: "259000 €",
+  },
+  {
+    number: 9,
+    name: "Villa Áigi",
+    status: "Available",
+    address: "Itärinteentie",
+    plotSize: "1286 m²",
+    villaSize: "58,5 m²",
+    price: "259000 #",
+  },
+  {
+    number: 10,
+    name: "Villa Ráfi",
+    status: "Available",
+    address: "Itärinteentie",
+    plotSize: "1251 m²",
+    villaSize: "58,5 m²",
+    price: "259000 €",
+  },
 ];
 
 return (
@@ -219,31 +298,43 @@ return (
         </div>
       </section>
 
-      <section className="hawoSection">
-        <div className="sectionInner twoColumn">
-          <div>
-            <p className="eyebrow">Built by Hawo</p>
-            <h2>Built indoors. Delivered complete.</h2>
-          </div>
+    <section className="hawoSection">
+  <div className="sectionInner twoColumn">
+    <div>
+      <p className="eyebrow">Built by Hawo</p>
+      <h2>Built indoors. Delivered complete.</h2>
+    </div>
 
-          <div>
-            <p>
-              The villas are built by Hawo fully indoors, protected from weather
-              throughout the construction process. The completed buildings are
-              then transported to Suomutunturi as finished units.
-            </p>
+    <div>
+ <img
+  src={hawoAerialImage}
+  alt="Àilu villas in Suomutunturi"
+  className="hawoAerialImage"
+/>
 
-            <a
-              href="https://hawo.fi"
-              target="_blank"
-              rel="noreferrer"
-              className="button darkButton"
-            >
-              Visit Hawo
-            </a>
-          </div>
-        </div>
-      </section>
+<img
+  src={hawoLogo}
+  alt="Hawo"
+  className="hawoLogo"
+/>
+
+<p>
+        The villas are built by Hawo fully indoors, protected from weather
+        throughout the construction process. The completed buildings are
+        then transported to Suomutunturi as finished units.
+      </p>
+
+      <a
+        href="https://hawo.fi"
+        target="_blank"
+        rel="noreferrer"
+        className="button darkButton"
+      >
+        Visit Hawo
+      </a>
+    </div>
+  </div>
+</section>
 
       <section className="locationSection" id="location">
         <div className="sectionInner">
@@ -287,12 +378,12 @@ return (
     <h3>National parks & attractions</h3>
 
     <ul>
+      <li>Salla Ski Resort – approx. 70 km</li>
       <li>Riisitunturi National Park – approx. 78 km</li>
       <li>Pieni Karhunkierros Trail – approx. 86 km</li>
+      <li>Ruka Ski Resort – approx. 87 km</li>
       <li>Pyhä-Luosto National Park – approx. 95 km</li>
-      <li>Salla Ski Resort – approx. 95 km</li>
       <li>Ranua Wildlife Park – approx. 145 km</li>
-      <li>Ruka Ski Resort – approx. 145 km</li>
     </ul>
   </div>
 </div>
@@ -389,14 +480,24 @@ return (
   {villa.number}. {villa.name}
 </h3>
 
-     <div className="villaMeta">
-  <p className="plotSize">Plot size: {villa.plotSize || "TBD"}</p>
-  <p className="villaSize">Villa size: {villa.villaSize || "TBD"}</p>
-  <p className="villaPrice">Price: {villa.price || "TBD"}</p>
+  <div className="villaMeta">
+  <p>Address: {villa.address || "TBD"}</p>
+  <p>Plot size: {villa.plotSize || "TBD"}</p>
+  <p>Villa size: {villa.villaSize || "TBD"}</p>
 
-  <p>
-    Private plot · Own connections · Finnish Lapland
-  </p>
+  {villa.price && (
+  <p>Price: {villa.price}</p>
+)}
+
+  {villa.demo ? (
+    <p className="demoVillaText">
+      The demo villa will arrive in August 2026. You are welcome to explore the property in person by arranging a private viewing.
+    </p>
+  ) : (
+    <p>
+      Private plot · Own connections · Finnish Lapland
+    </p>
+  )}
 </div>
 
       <button>Download brochure</button>

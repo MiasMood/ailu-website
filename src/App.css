@@ -1184,3 +1184,55 @@ p.eyebrow {
 .footerNav a:hover {
   color: var(--gold-bright);
 }
+
+.hawoLogo {
+  display: block;
+  width: 210px;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0 2rem;
+}
+
+.hawoLogoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3.5rem;
+}
+
+.hawoLogo {
+  width: 185px;
+  height: auto;
+}
+
+.hawoAerialImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.hawoLogo {
+  width: 165px;
+  margin: 1rem 0 0.8rem;
+}
+
+.button {
+  transition:
+    background-color .25s ease,
+    color .25s ease,
+    border-color .25s ease,
+    transform .25s ease;
+}
+
+.button:hover {
+  background: var(--gold-bright);
+  color: var(--navy);
+  border-color: var(--gold-bright);
+  transform: translateY(-2px);
+}
+
+.demoVillaText {
+  margin-top: 1.2rem;
+}
