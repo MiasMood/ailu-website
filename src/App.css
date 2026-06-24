@@ -957,13 +957,6 @@ h2 {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .eyebrow {
-    font-size: 12px;
-    letter-spacing: 0.12em;
-  }
-}
-
 p.eyebrow {
   color: #edcf27 !important;
   font-size: 15px !important;
@@ -976,6 +969,18 @@ p.eyebrow {
   p.eyebrow {
     font-size: 15px !important;
     letter-spacing: 0.10em !important;
+  }
+
+  .contactLogo {
+    width: 120px;
+  }
+
+  .ailuLogo {
+    width: 105px;
+  }
+
+  .habitaLogo {
+    width: 135px;
   }
 }
 
