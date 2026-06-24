@@ -353,11 +353,11 @@ return (
     <h3>Outdoor activities</h3>
 
     <ul>
-      <li>Suomutunturi Ski Resort – approx. 1 km</li>
-      <li>Ski lifts – approx. 1 km</li>
       <li>Cross-country ski tracks – direct access</li>
       <li>Snowmobile routes – direct access</li>
       <li>Hiking trails – direct access</li>
+      <li>Suomutunturi Ski Resort – approx. 1 km</li>
+      <li>Ski lifts – approx. 1 km</li>
       <li>East slope Ski Lift – approx. 400 m</li>
     </ul>
   </div>
@@ -366,13 +366,13 @@ return (
   <h3>Services & travel</h3>
 
   <ul>
-    <li>Kuusamo Airport – approx. 115 km</li>
-    <li>Rovaniemi Airport – approx. 140 km</li>
-    <li>Restaurant Takka – approx. 1 km</li>
+     <li>Restaurant Takka – approx. 1 km</li>
     <li>Hotel Suomutunturi – approx. 1 km</li>
-    <li>Local services – approx. 12 km</li>
+     <li>Local services – approx. 12 km</li>
     <li>Kemijärvi town centre – approx. 42 km</li>
     <li>Kemijärvi railway station – approx. 42 km</li>
+    <li>Kuusamo Airport – approx. 115 km</li>
+    <li>Rovaniemi Airport – approx. 140 km</li>
   </ul>
 </div>
 
