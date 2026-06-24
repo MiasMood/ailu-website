@@ -628,9 +628,17 @@ return (
 </nav>
   </div>
 
-  <p className="footerCredit">
-    Website designed & developed by <strong>Studio Sumell</strong>
-  </p>
+  <p>
+  Website designed &amp; developed by{" "}
+  <a
+    href="https://www.miasumell.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="footerCreditLink"
+  >
+    Studio Sumell
+  </a>
+</p>
 </footer>
     </main>
   );
