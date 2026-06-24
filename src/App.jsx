@@ -384,6 +384,7 @@ return (
       <li>Riisitunturi National Park – approx. 78 km</li>
       <li>Pieni Karhunkierros Trail – approx. 86 km</li>
       <li>Ruka Ski Resort – approx. 87 km</li>
+      <li>Pyhä Ski Resort – approx. 94 km</li>
       <li>Pyhä-Luosto National Park – approx. 95 km</li>
       <li>Ranua Wildlife Park – approx. 145 km</li>
     </ul>
@@ -537,11 +538,12 @@ return (
         Business ID: 3609849-2
       </p>
 
-      <p>
-        With over 35 years of experience in hospitality, tourism, construction
-        and property development, they share a vision of creating high-quality
-        Arctic holiday homes inspired by the unique nature of Finnish Lapland.
-      </p>
+     <p>
+  Sanna and Mikael Rönnkvist, the entrepreneurial couple behind ÁILU, combine
+  over 35 years of experience in hospitality, tourism, construction and
+  property development. Their vision for ÁILU is to create high-quality Arctic
+  holiday homes inspired by the unique nature of Finnish Lapland.
+</p>
     </div>
 
 <div className="contactCardBottom">
