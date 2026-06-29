@@ -420,10 +420,6 @@ return (
   <div className="sectionInner wide">
     <p className="eyebrow">Available villas</p>
     <h2>Choose your place in Lapland</h2>
-    <p>
-      The villas are listed individually. Downloadable
-      brochures can be updated as the sales material is finalized.
-    </p>
 
   <div className="plotMap">
   <img src={plotMapImage} alt="Àilu villa plot map in Suomutunturi" />
@@ -502,8 +498,6 @@ return (
     </p>
   )}
 </div>
-
-      <button>Download brochure</button>
     </div>
   ))}
 </div>
