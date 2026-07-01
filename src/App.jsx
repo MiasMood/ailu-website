@@ -308,10 +308,7 @@ return (
     <h2>The ÁILU Interior Experience</h2>
 
     <p className="partnersIntro">
-      Every ÁILU villa is furnished in collaboration with two iconic Finnish
-      brands rooted in Lapland. Together, Veke and Pentik create interiors
-      that combine timeless Nordic design, authentic craftsmanship and the
-      peaceful beauty of the North.
+      Create the complete ÁILU experience with our optional interior package, developed in collaboration with two iconic Finnish brands rooted in Lapland. Together, Veke and Pentik create interiors that combine timeless Nordic design, authentic craftsmanship and the peaceful beauty of the North.
     </p>
 
     <div className="partnerBlock">
