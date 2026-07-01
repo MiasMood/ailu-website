@@ -1354,3 +1354,105 @@ p.eyebrow {
 .footerCreditLink:hover {
   color: var(--gold-bright);
 }
+
+.partnersSection {
+  background: #ffffff;
+  color: var(--navy);
+  padding: 56px 24px 96px;
+}
+
+.partnersIntro {
+  max-width: 1050px;
+  margin: 0 0 56px;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.partnerBlock {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 72px;
+  align-items: start;
+  margin-top: 56px;
+
+  background: #f7f4ef;
+  border-radius: 28px;
+  padding: 28px;
+}
+
+.partnerBlock.reverse .partnerImageWrap {
+  order: 2;
+}
+
+.partnerBlock.reverse .partnerText {
+  order: 1;
+}
+
+.partnerImageWrap {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.partnerImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.partnerText {
+  max-width: 520px;
+  min-width: 0;
+  padding-top: 6px;
+  text-align: left;
+}
+
+.partnerText h3 {
+  margin: 0 0 22px;
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+.partnerText p {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .partnersSection {
+  padding: 56px 24px;
+}
+
+.partnersIntro {
+  margin-bottom: 40px;
+}
+
+.partnerBlock {
+  gap: 36px;
+  padding: 24px;
+}
+
+  .partnerBlock,
+  .partnerBlock.reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .partnerBlock.reverse .partnerImageWrap,
+  .partnerBlock.reverse .partnerText {
+    order: initial;
+  }
+
+  .partnerText {
+    max-width: none;
+    min-width: 0;
+  }
+}

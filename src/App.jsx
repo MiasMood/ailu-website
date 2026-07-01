@@ -15,6 +15,8 @@ import loftImage from "./assets/images/Sisäkuva_Parvi.jpg";
 import livingRoomOneImage from "./assets/images/Sisäkuva_Tupa1.jpg";
 import bathroomImage from "./assets/images/Sisäkuva_WC.jpg";
 import plotMapImage from "./assets/images/plot-map.jpg";
+import vekePartnerImage from "./assets/images/Veke_partner.png";
+import pentikPartnerImage from "./assets/images/pentik_partner.png";
 
 import floorPlanGroundImage from "./assets/images/ailu-floor-plan-ground.jpg";
 import floorPlanLoftImage from "./assets/images/ailu-floor-plan-loft.jpg";
@@ -299,6 +301,86 @@ return (
           </div>
         </div>
       </section>
+
+      <section className="partnersSection" id="partners">
+  <div className="sectionInner wide">
+    <p className="eyebrow">Our Partners</p>
+    <h2>The ÁILU Interior Experience</h2>
+
+    <p className="partnersIntro">
+      Every ÁILU villa is furnished in collaboration with two iconic Finnish
+      brands rooted in Lapland. Together, Veke and Pentik create interiors
+      that combine timeless Nordic design, authentic craftsmanship and the
+      peaceful beauty of the North.
+    </p>
+
+    <div className="partnerBlock">
+      <div className="partnerImageWrap">
+        <img
+          src={vekePartnerImage}
+          alt="Veke interior design for ÁILU"
+          className="partnerImage"
+        />
+      </div>
+
+      <div className="partnerText">
+
+        <h3>Born in the North. Chosen for ÁILU.</h3>
+
+        <p>
+          Founded in Ranua, Finnish Lapland, Veke has grown from a family
+          business into one of Finland’s leading furniture and interior design
+          companies. Built on courage, perseverance, and a passion for timeless
+          Nordic design, Veke creates interiors where quality, comfort, and
+          functionality come together.
+        </p>
+
+        <p>
+          For ÁILU, choosing Veke was about more than furniture. It was about
+          partnering with a company whose northern roots and values reflect our
+          own. Every carefully selected piece complements the architecture of
+          the villas, creating homes where modern comfort meets the peaceful
+          beauty of the Arctic.
+        </p>
+      </div>
+    </div>
+
+    <div className="partnerBlock reverse">
+      <div className="partnerImageWrap">
+        <img
+          src={pentikPartnerImage}
+          alt="Pentik interior details for ÁILU"
+          className="partnerImage"
+        />
+      </div>
+
+      <div className="partnerText">
+
+        <h3>Born in Lapland. Inspired by nature.</h3>
+
+        <p>
+          Founded in Posio in 1971, Pentik has drawn inspiration from the
+          forests, fells, and ever-changing seasons of Finnish Lapland for more
+          than five decades.
+        </p>
+
+        <p>
+          Its ceramics, textiles, and home décor reflect the colours, textures,
+          and quiet beauty of the North. Timeless design, natural materials,
+          and genuine craftsmanship have made Pentik one of Finland’s most
+          respected design brands.
+        </p>
+
+        <p>
+          For ÁILU, Pentik was the natural choice. Its collections bring
+          warmth, authenticity, and a true sense of place to every villa,
+          creating interiors that feel deeply connected to the surrounding
+          landscape.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section className="hawoSection">
   <div className="sectionInner twoColumn">
