@@ -16,7 +16,7 @@ import livingRoomOneImage from "./assets/images/Sisäkuva_Tupa1.jpg";
 import bathroomImage from "./assets/images/Sisäkuva_WC.jpg";
 import plotMapImage from "./assets/images/plot-map.jpg";
 import vekePartnerImage from "./assets/images/Veke_partner.png";
-import pentikPartnerImage from "./assets/images/pentik_partner.png";
+import pentikPartnerImage from "./assets/images/Pentik_partner.png";
 
 import floorPlanGroundImage from "./assets/images/ailu-floor-plan-ground.jpg";
 import floorPlanLoftImage from "./assets/images/ailu-floor-plan-loft.jpg";
